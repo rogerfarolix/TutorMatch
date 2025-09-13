@@ -2,60 +2,80 @@
 
 <div align="center">
 
-**Une plateforme qui connecte tuteurs et élèves grâce à un algorithme de compatibilité **
+![TutorMatch Banner](https://i.ibb.co/0FvG1k5/tutormatch-banner.png)  
+**Une plateforme qui connecte tuteurs et élèves grâce à un algorithme de compatibilité**
 
-https://drive.google.com/file/d/1Rg9OjQgezevPGpiQkh5DOK8APymdSzip/view?usp=sharing 🌟 Présentation du Projet
+[🌟 Présentation du Projet](https://drive.google.com/file/d/1Rg9OjQgezevPGpiQkh5DOK8APymdSzip/view?usp=sharing)
+
+</div>
+
+---
+
+## 🏷️ Badges
+
+![Laravel](https://img.shields.io/badge/Laravel-10.x-red?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.1-blue?style=for-the-badge&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge&logo=bootstrap)
+
+---
+
+## 📌 Description
 
 TutorMatch analyse :
 
--   📚 La compatibilité des matières
--   🎓 L'adéquation des niveaux scolaires
--   ⏰ Les créneaux horaires disponibles
--   💰 Les budgets et tarifs
+-   📚 Compatibilité des matières
+-   🎓 Adéquation des niveaux scolaires
+-   ⏰ Créneaux horaires disponibles
+-   💰 Budgets et tarifs
 
-Le système génère des **scores de compatibilité sur 100 points** pour garantir les meilleures correspondances possibles.
+Le système génère un **score de compatibilité sur 100 points** pour garantir les meilleures correspondances possibles.
+
+---
 
 ## ✨ Fonctionnalités Clés
 
-### 🔐 **Système d'Authentification**
+### 🔐 Authentification
 
 -   Inscription et connexion sécurisées
 -   Comptes de démonstration pré-créés
 
-### 👨‍🏫 **Gestion des Tuteurs**
+### 👨‍🏫 Gestion des Tuteurs
 
 -   Profils détaillés avec matières enseignées
 -   Définition des niveaux pris en charge
 -   Planification des disponibilités
--   Gestion des tarifs et expérience
+-   Gestion des tarifs et de l’expérience
 
-### 🎓 **Gestion des Élèves**
+### 🎓 Gestion des Élèves
 
 -   Profils personnalisés avec besoins spécifiques
 -   Matières recherchées et niveau scolaire
 -   Disponibilités et budget maximum
 -   Visualisation des matchs recommandés
 
-### 🤖 **Algorithme de Matchmaking **
+### 🤖 Algorithme de Matchmaking
 
-```
+```text
 Score de Compatibilité = 40% Matières + 30% Niveau + 30% Disponibilités
 ```
 
--   **40 points** : Compatibilité des matières communes
--   **30 points** : Adéquation des niveaux scolaires
--   **30 points** : Créneaux horaires partagés
+-   40 pts : Compatibilité des matières
+-   30 pts : Adéquation des niveaux scolaires
+-   30 pts : Créneaux horaires partagés
 
-### 📊 **Dashboard **
+### 📊 Dashboard
 
 -   Statistiques en temps réel
 -   Visualisation des meilleurs matchs
--   Gestion des statuts (suggéré/accepté/rejeté)
--   Interface responsive et moderne
+-   Gestion des statuts (suggéré / accepté / rejeté)
+-   Interface moderne et responsive
+
+---
 
 ## 🚀 Installation Rapide
 
-### Prérequis Système
+### Prérequis
 
 ```bash
 PHP 8.1+
@@ -67,7 +87,7 @@ MySQL 8.0+
 
 ```bash
 # Cloner le projet
-git clone [[votre-repo]](https://github.com/rogerfarolix/TutorMatch)
+git clone https://github.com/rogerfarolix/TutorMatch
 cd TutorMatch
 
 # Installation des dépendances
@@ -80,9 +100,9 @@ php artisan key:generate
 
 ### 2️⃣ Configuration Base de Données
 
-Modifiez votre fichier `.env` :
+Modifiez `.env` :
 
-```bash
+```dotenv
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -97,7 +117,7 @@ DB_PASSWORD=
 # Exécution des migrations
 php artisan migrate
 
-# Peuplement avec données de démonstration (inclut les utilisateurs)
+# Peuplement avec données de démonstration
 php artisan db:seed
 ```
 
@@ -107,19 +127,19 @@ php artisan db:seed
 php artisan serve
 ```
 
-🌐 **Accédez à l'application sur : http://localhost:8000**
+🌐 Accédez à l'application : [http://localhost:8000](http://localhost:8000)
+
+---
 
 ## 👥 Comptes de Démonstration
 
-Le seeder crée automatiquement des comptes de test :
+| Type    | Email                                               | Mot de Passe          | Description    |
+| ------- | --------------------------------------------------- | --------------------- | -------------- |
+| 👨‍🏫 User | [admin@tutormatch.com](mailto:admin@tutormatch.com) | passwordtutormatch123 | Administrateur |
 
-| Type    | Email                | Mot de Passe          | Description    |
-| ------- | -------------------- | --------------------- | -------------- |
-| 👨‍🏫 User | admin@tutormatch.com | passwordtutormatch123 | Administrateur |
+---
 
 ## 🎯 Exemple de Matching Parfait
-
-### Cas d'Usage Concret
 
 **👨‍🏫 Ahmed (Tuteur)**
 
@@ -135,11 +155,13 @@ Le seeder crée automatiquement des comptes de test :
 -   Disponibilité : Lundi 18h-20h
 -   Budget : 30€/h
 
-**🎯 Résultat : Score de 100/100** ✨
+**🎯 Résultat : Score 100/100**
 
 -   ✅ Matière commune (40 pts)
 -   ✅ Niveau compatible (30 pts)
 -   ✅ Créneaux parfaits (30 pts)
+
+---
 
 ## 🏗️ Architecture Technique
 
@@ -156,7 +178,7 @@ app/
 │   ├── User               # Modèle utilisateur
 │   ├── Tutor              # Modèle tuteur
 │   ├── Student            # Modèle élève
-│   └── MatchModel              # Modèle de match
+│   └── MatchModel         # Modèle de match
 └── Services/
     └── MatchmakingService # Algorithme de matching
 ```
@@ -164,11 +186,13 @@ app/
 ### Base de Données
 
 ```sql
-users          # Table des utilisateurs (authentification)
-tutors         # Profils tuteurs avec compétences
-students       # Profils élèves avec besoins
+users          # Utilisateurs (authentification)
+tutors         # Profils tuteurs
+students       # Profils élèves
 matches        # Résultats des matchings avec scores
 ```
+
+---
 
 ## 🔧 Technologies Utilisées
 
@@ -178,19 +202,23 @@ matches        # Résultats des matchings avec scores
 -   **Authentification** : Laravel Sanctum
 -   **Architecture** : MVC, Services Pattern
 
+---
+
 ## 📈 Roadmap & Améliorations Futures
 
--   [ ] 🔔 Système de notifications en temps réel
--   [ ] 💬 Chat intégré tuteur-élève
--   [ ] 📱 Application mobile (API REST)
--   [ ] 🎥 Visioconférence intégrée
--   [ ] 📊 Analytics avancées
--   [ ] 🌍 Support multi-langues
+-   🔔 Notifications en temps réel
+-   💬 Chat intégré tuteur-élève
+-   📱 Application mobile (API REST)
+-   🎥 Visioconférence intégrée
+-   📊 Analytics avancées
+-   🌍 Support multi-langues
 
 ---
 
 <div align="center">
 
-**Développé avec ❤️ Par Roger Gnanih**
+**Développé avec ❤️ par Roger Gnanih**
+
+![GitHub followers](https://img.shields.io/github/followers/rogerfarolix?label=Suivez%20moi&style=social)
 
 </div>
